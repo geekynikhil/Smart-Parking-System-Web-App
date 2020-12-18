@@ -2,7 +2,7 @@ var express=require("express")
 var router=express.Router({mergeParams: true})
 var booking = require("../models/booking")
 var slot=require("../models/slot")
-var nodemailer = require("nodemailer");
+
 
 router.get("/slotsdashboard",function(req,res){
     slot.find({},function(err,foundslots){
