@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>E-parking</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <!-- Bootstrap CSS CDN -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+            <!-- Font Awesome JS -->
+            <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+            <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+            <!-- Our Custom CSS -->
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/navbar.css">
+        </head>
+    <body>
+
+<%- include("../partials/navbar") -%>
+
+<!-- Page Content  -->
+    <div class="std1">
+        <div class="container header">
+            <div class="row">
+                <div class=" col-xs-4 col-xs-4">
+                    <div class=" panel panel-primary">
+                        <div class="panel-body">
+                                <form action="/signup" method="POST">    
+                                    <div class="panel-heading">
+                                        <h3>SIGN UP</h3>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter username" name="username" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter  email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Enter phone number" name="phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Enter password" name="password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="confirm Password" name="confirmpassword" required>
+                                    </div>
+                                    <input class="btn btn-primary" type="submit" value="submit">
+                                </form>
+                        </div>
+                        <div class="panel-footer">
+                            <p>Have an account? <a href="/login">Login</a></p>
+                        </div>                      
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<%- include("../partials/footer") -%>

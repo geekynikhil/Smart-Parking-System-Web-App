@@ -1,0 +1,222 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*-------------------------------------------------------
+  SIGNUP PAGE
+-------------------------------------------------------*/
+.std1{
+padding-top:2%;
+padding-bottom:2%;
+padding-left:23%;
+}
+.form{
+padding-top:5%;
+padding-bottom:5%;
+padding-left:23%;
+}
+.form-group{
+width:200%;
+}
+/*------------------------------------------------------
+LOGIN PAGE
+------------------------------------------------------*/
+.std{
+padding-top:5%;
+padding-bottom:6%;
+padding-left:23%;
+}
+/*------------------------------------------------------
+Recovery password
+-----------------------------------------------------*/
+.std3{
+padding-top:5%;
+padding-bottom:5%;
+padding-left:23%;
+}
+
+/*-------------------------------------------------------
+User Dashboard
+-------------------------------------------------------*/
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 70%;
+    height: 200%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #fff;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+    padding-left:4%;
+}
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+table{
+background-color: #0a0a0a;
+}
+
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #eaeef1;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+
+}
+
+
+/* CSS for Slots dashboard  */
+
+.table{
+    max-width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    font-weight: 400;
+}
+.cs_slot{
+    box-shadow: 2px rgba(00, 00, 00, 1);
+    height:100px;
+    width: 50px;
+}
+.cs_slot .free{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #6aed53, #53ed79);
+}
+.cs_slot .booked{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, red, #e3cb30);
+}
+.table td{
+    padding: 0%;
+}
+
+.btn{
+    margin-bottom: 10px;
+}

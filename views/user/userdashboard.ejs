@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>E-parking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <%- include("../partials/navbar") -%>
+    
+            <div class="container emp-profile">
+                 <form method="post">
+                       <div class="row">
+                          <div class="col-md-6">
+                              <div class="profile-head">
+                                  <h2>
+                                    Welcome <%= user.name %>
+                                  </h2>
+                                  <br>
+                                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                         <li class="nav-item">
+                                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                         </li>
+                                  </ul>
+                             </div>
+                          </div>
+                          <div class="col-md-2">
+                              <a class="profile-edit-btn" name="btnAddMore" value="Edit Profile" href="/editprofile">Edit Profile</a>
+                          </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-md-8">
+                               <div class="tab-content profile-tab" id="myTabContent">
+                                   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                       <div class="row">
+                                           <div class="col-md-6">
+                                                <label>Username</label>
+                                           </div>
+                                           <div class="col-md-6">
+                                                <p><%= user.username %></p>
+                                           </div>
+                                       </div>
+                                       <div class="row">
+                                           <div class="col-md-6">
+                                               <label>name</label>
+                                           </div>
+                                           <div class="col-md-6">
+                                                <p><%= user.name %></p>
+                                           </div>
+                                       </div>                                      
+                                        <div class="row">
+                                           <div class="col-md-6">
+                                                <label>E-mail</label>
+                                           </div>
+                                           <div class="col-md-6">
+                                                <p><%= user.email %></p>
+                                           </div>
+                                       </div>
+                                       <div class="row">
+                                           <div class="col-md-6">
+                                                <label>phone No</label>
+                                           </div>
+                                           <div class="col-md-6">
+                                                <p><%= user.phone %></p>
+                                           </div>
+                                       </div> 
+                                   </div> 
+                               </div>
+                           </div>
+                       </div>
+                 </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include("../partials/footer") -%>

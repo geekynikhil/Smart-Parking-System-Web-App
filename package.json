@@ -1,0 +1,37 @@
+{
+  "name": "parking-web-app",
+  "version": "1.0.0",
+  "description": "In this web app user make a profile using sign up credentials and after login, user can book a slot for parking and can see his parking details and history. If the user book a particular slot, nobody can book that same slot again until the user checkout that slot.",
+  "main": "app.js",
+  "author": "Nikhil Sharma",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geekynikhil/Smart-Parking-System-Web-App.git"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "start nodemon": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.7",
+    "morgan": "~1.9.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
