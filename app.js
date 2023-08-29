@@ -16,16 +16,19 @@ app.use(flash())
 
 
 // mongodb
-var mongoose=require("mongoose")
-mongoose.connect("mmmongodb+srv://geekynikhil:fuZG6JvGppLoiG25@rentomojocluster-gpwbc.azure.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true,useCreateIndex:true,useFindAndModify:false},function(err){
-    if(err){
-        console.log("Cannot connect to database")
-    }
-    else {
-        console.log(" connect to database")
-    }
+const mongoose = require("mongoose")
+
+const mongoString = "mongodb+srv://predatoreagle98:predatoreagle98@cluster0.rkana2c.mongodb.net/?retryWrites=true&w=majority"
+
+mongoose.connect(mongoString, {useNewUrlParser: true})
+
+mongoose.connection.on("error", function(error) {
+  console.log(error)
 })
 
+mongoose.connection.on("open", function() {
+  console.log("Connected to MongoDB database.")
+})
 
 // models
 
